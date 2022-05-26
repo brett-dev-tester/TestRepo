@@ -1,16 +1,24 @@
     {
-      "plugins": [
+      'plugins': [
         [
-          "@semantic-release/commit-analyzer", {
-            "preset": "conventionalcommits"
+          '@semantic-release/commit-analyzer', {
+            'preset": "conventionalcommits'
           }
         ],
-        "@semantic-release/release-notes-generator",
-        "@semantic-release/changelog",
-        "@semantic-release/github"
+        '@semantic-release/release-notes-generator',
+        '@semantic-release/changelog',
+        '@semantic-release/github'
       ],
-      "branches": [
-        {"name": "release"},
-        {"name": "hotfix", "channel": "${name}"},
+      'branches': [
+        {
+          'name': 'develop'
+        }, {
+          'name': 'release',
+          'channel': 'channel-'
+        }, {
+          'name': 'pre-release',
+          'channel': 'channel-',
+          'prerelease': true
+        }
       ]
     }
