@@ -1,4 +1,3 @@
-.releaserc
-.releaserc.json
-.releaserc.yaml
-.releaserc.yml
+node_modules
+package*.json
+.releaserc*
