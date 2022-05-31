@@ -10,15 +10,13 @@
     '@semantic-release/github'
   ],
   'branches': [
-    {
-      'name': 'develop'
+    { 
+      'name': 'pre-release',
+      'channel': 'channel-${name}',
+      'prerelease': true
     }, {
       'name': 'release',
-      'channel': 'channel-'
-    }, {
-      'name': 'pre-release',
-      'channel': 'channel-',
-      'prerelease': true
+      'channel': 'channel-${name}'
     }
   ]
 }
